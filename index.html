@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- CONFIGURACIÓN GENERAL
+         Define idioma, adaptación móvil y conexión con CSS. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CAMBIAR:
+         Reemplazar por el nombre del cliente. -->
+    <title> ADRIANA | MASTER CHEF</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         01. HEADER
+         Contiene logo/nombre, menú y botón principal.
+         Los estudiantes deben cambiar los textos según el cliente.
+         ========================================================= -->
+    <header class="site-header">
+        <a class="brand" href="#inicio">
+            <!-- CAMBIAR: nombre de marca -->
+            <span class="MASTER CHEF">✦</span>
+            <span>NOMBRE CLIENTE</span>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#inicio">INICIO</a>
+            <a href="#servicios">SERVICIOS</a>
+            <a href="#nosotros">NOSOTROS</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+
+        <!-- CAMBIAR: texto del CTA -->
+        <a class="header-cta" href="#contacto">RESERVAR →</a>
+    </header>
+
+
+    <!-- =========================================================
+         02. HERO BANNER
+         Es la primera sección visible del sitio.
+         Se divide en texto + imagen principal.
+         ========================================================= -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <!-- Decoración animada controlada con JavaScript -->
+            <canvas id="energyCanvas" class="energy-canvas"></canvas>
+
+            <!-- Texto grande de fondo:
+                 CAMBIAR por una palabra vinculada al cliente:
+                 TATTOO / STRONG / FLAVOR / etc. -->
+            <div class="hero-word">SABOR</div>
+
+            <!-- -------------------------------------------------
+                 02.1. CONTENIDO IZQUIERDO
+                 Aquí se cambia la información del cliente.
+                 ------------------------------------------------- -->
+            <div class="hero-content">
+
+                <!-- CAMBIAR: categoría o frase corta -->
+                <p class="eyebrow">SABOR, CREATIVIDAD</p>
+
+                <!-- CAMBIAR: título principal -->
+                <h1>
+                    LA COCINA DE ADRIANA
+                    <span>hecha para ti.</span>
+                </h1>
+
+                <!-- CAMBIAR: descripción del negocio -->
+                <p class="hero-description">
+                    Una propuesta gastronomica donde la creatividad,
+                    la técnica y los ingredientes se encuentran para
+                    transformar cada plato en una experiencia memorable.
+                </p>
+
+                <div class="hero-actions">
+                    <!-- CAMBIAR: acciones según el negocio -->
+                    <a href="#contacto" class="btn btn-primary">Descubrir la experiencia</a>
+                    <a href="#nosotros" class="btn btn-secondary">Conocer la chef</a>
+                </div>
+            </div>
+
+
+            <!-- -------------------------------------------------
+                 02.2. IMAGEN PRINCIPAL
+                 El estudiante debe:
+                 1. retocar la fotografía,
+                 2. quitar fondo si es necesario,
+                 3. exportar en WEBP,
+                 4. reemplazar este archivo.
+                 ------------------------------------------------- -->
+            <div class="hero-media">
+                <div class="media-frame"></div>
+
+                <img
+                    src="assets/images/luu.webp"
+                    alt="Imagen principal del cliente"
+                    class="hero-image"
+                    id="heroImage"
+                >
+
+                <div class="floating-tag">
+                    <span>01</span>
+                    <p>IMAGEN PRINCIPAL<br>DEL CLIENTE</p>
+                </div>
+            </div>
+
+
+            <!-- -------------------------------------------------
+                 02.3. PANEL INFERIOR
+                 Datos rápidos. Cambiar según el cliente.
+                 ------------------------------------------------- -->
+            <div class="hero-stats" id="servicios">
+
+                <article class="stat">
+                    <small>ESPECIALIDAD 01</small>
+                    <strong>+01</strong>
+                    <p>Platos creados con identidad y creatividad.</p>
+                </article>
+
+                <article class="stat">
+                    <small>EXPERIENCIA 02</small>
+                    <strong>+02</strong>
+                    <p>Dedicación en cada preparación.</p>
+                </article>
+
+                <article class="stat">
+                    <small>DIFERENCIAL</small>
+                    <strong>100%</strong>
+                    <p>Saborers que buscan sorprender</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+             03. SECCIÓN DUEÑOS / EQUIPO
+             Debe ir debajo del Hero.
+             Cambiar imagen, nombres y descripción.
+             ========================================================= -->
+        <section class="owners" id="nosotros">
+
+            <div class="owners-image-wrap">
+                <img
+                    src="assets/images/uu.webp"
+                    alt="Dueños o equipo del negocio"
+                    class="owners-image"
+                >
+            </div>
+
+            <div class="owners-content">
+                <p class="eyebrow">SOBRE LA CHEF</p>
+
+                <!-- CAMBIAR -->
+                <h2>UNA PASIÓN QUE COMIENZA EN LA COCINA.</h2>
+
+                <!-- CAMBIAR -->
+                <p>
+                    La gastronomia es una forma de contar historias.
+                    cada ingrediente, cada técnica y cada detalle hacen
+                    parte de una propuesta creada para despertar los 
+                    sentidos y convertir una comida en un momento especial.
+                </p>
+
+                <a class="text-link" href="#contacto">ADRIANA nace de la Pasión por crear, experimentar 
+                  y descubrir nuevas formas de disfrutar la cocina.  →</a>
+            </div>
+
+        </section>
+
+
+        <!-- =========================================================
+             04. CTA FINAL / CONTACTO
+             Bloque sencillo para cerrar la landing.
+             ========================================================= -->
+        <section class="contact" id="contacto">
+            <p class="eyebrow">RESERVAS EVENTOS EXPERIENCIAS</p>
+            <h2>Una experiencia que merece ser saboreada</h2>
+            <a href="#" class="btn btn-primary">CONTACTAR</a>
+        </section>
+
+    </main>
+
+    <!-- JavaScript:
+         controla partículas y pequeño movimiento de la imagen. -->
+    <script src="js/script.js"></script>
+</body>
+</html>
